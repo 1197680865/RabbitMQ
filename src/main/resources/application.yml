@@ -1,0 +1,12 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: rabbitmq-springboot
+  rabbitmq:
+    host: 39.106.115.236
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+    virtual-host: /mhs # 虚拟主机
+# web管理页面 http://39.106.115.236:15672/
