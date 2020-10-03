@@ -22,6 +22,12 @@ spring:
           # 重试时间间隔 乘子，如第一次3s，第二次则为6秒，第三次则为12s
           multiplier: 2
 
+        # 消息消费确认 acknowledge：manual手动确认，默认为自动确认
+        acknowledge-mode: manual
+    # 消息确认 confirm，return， acknowledge
+    publisher-confirms: true # 开启发布者确认,确认消息是否到达 Broker 服务器
+    publisher-returns: true # 确认消息是否通过交换器路由到队列
+
   redis:
     database: 0
     host: 127.0.0.1

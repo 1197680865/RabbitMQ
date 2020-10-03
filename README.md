@@ -27,3 +27,6 @@
 适用范围较广，有多种不同的实现方式。其核心思想是为每一次操作生成一个唯一性的凭证，也就是token。一个token在操作的每一个阶段只有一次执行权，一旦执行成功则保存执行结果。对重复的请求，返回同一个结果。
 
 **见top.itser.rabbitmq.eg.idempotent.IdempotentConsumer**
+
+### 消息确认
+**见master top.itser.rabbitmq.eg.ack.AckDemoConsumer**
